@@ -1,31 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Phonebook.hpp                                      :+:      :+:    :+:   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbernaze <cbernaze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 12:27:31 by cbernaze          #+#    #+#             */
-/*   Updated: 2023/10/18 14:07:04 by cbernaze         ###   ########.fr       */
+/*   Created: 2023/10/18 12:36:33 by cbernaze          #+#    #+#             */
+/*   Updated: 2023/10/18 13:08:42 by cbernaze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
 
-#include "Contact.hpp"
+# include <iostream>
 
-class	Phonebook
+class	Contact
 {
 	public:
-	
-	Phonebook();
-	Phonebook(Phonebook const& other);
-	~Phonebook();
+
+	// Contact(std::string first_name, std::string last_name, std::string nickname,
+	// std::string darkest_secret, int number);
+	Contact();
+	Contact(Contact const& other);
+	~Contact();
 
 	private:
-	
-	Contact	contact[8];
+
+	std::string	m_first_name;
+	std::string	m_last_name;
+	std::string	m_nickname;
+	std::string	m_darkest_secret;
+	int			m_number;
 };
 
 #endif

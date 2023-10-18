@@ -1,31 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Phonebook.hpp                                      :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbernaze <cbernaze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 12:27:31 by cbernaze          #+#    #+#             */
-/*   Updated: 2023/10/18 14:07:04 by cbernaze         ###   ########.fr       */
+/*   Created: 2023/10/18 13:25:40 by cbernaze          #+#    #+#             */
+/*   Updated: 2023/10/18 13:44:11 by cbernaze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP
+#include "Phonebook.hpp"
 
-#include "Contact.hpp"
-
-class	Phonebook
+int	main()
 {
-	public:
-	
 	Phonebook();
-	Phonebook(Phonebook const& other);
-	~Phonebook();
-
-	private:
-	
-	Contact	contact[8];
-};
-
-#endif
+	return (0);
+}
