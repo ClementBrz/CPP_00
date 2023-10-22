@@ -6,7 +6,7 @@
 /*   By: cbernaze <cbernaze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:35:54 by cbernaze          #+#    #+#             */
-/*   Updated: 2023/10/21 16:57:28 by cbernaze         ###   ########.fr       */
+/*   Updated: 2023/10/22 08:01:23 by cbernaze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,9 +107,11 @@ int	Contact::darkest_secret()
 
 void	Contact::display_contact()
 {
+	std::cout << std::endl;
 	std::cout << "First Name: " << this->m_first_name << std::endl;
 	std::cout << "Last Name: " << this->m_last_name << std::endl;
 	std::cout << "Nickname: " << this->m_nickname << std::endl;
 	std::cout << "Phone Number: " << this->m_phone_number << std::endl;
 	std::cout << "Darkest Secret: " << this->m_darkest_secret << std::endl;
+	std::cout << std::endl;
 }

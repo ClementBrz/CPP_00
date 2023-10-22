@@ -12,6 +12,9 @@
 #ifndef __ACCOUNT_H__
 #define __ACCOUNT_H__
 
+# include <iostream>
+# include <iomanip>
+
 // ************************************************************************** //
 //                               Account Class                                //
 // ************************************************************************** //
@@ -40,17 +43,17 @@ public:
 
 private:
 
-	static int	_nbAccounts;
-	static int	_totalAmount;
-	static int	_totalNbDeposits;
-	static int	_totalNbWithdrawals;
+	static int	_nbAccounts; //Nb total de comptes
+	static int	_totalAmount; //Montant total de tous les comptes
+	static int	_totalNbDeposits; // Nombre total de depots
+	static int	_totalNbWithdrawals; //Nombre total de retrait
 
 	static void	_displayTimestamp( void );
 
-	int				_accountIndex;
-	int				_amount;
-	int				_nbDeposits;
-	int				_nbWithdrawals;
+	int				_accountIndex; //Numero du compte
+	int				_amount; //Montant du compte
+	int				_nbDeposits; //Depots fait sur le compte
+	int				_nbWithdrawals; //Retraits fait sur le compte
 
 	Account( void );
 

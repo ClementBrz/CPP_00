@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/clementbernazeau/Desktop/42/Cercle_4/CPP_00/ex01",
+      "program": "/Users/clementbernazeau/Desktop/42/Cercle_4/CPP_00/ex01/build/Debug/outDebug"
+    }
+  ]
+}
