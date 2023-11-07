@@ -6,7 +6,7 @@
 /*   By: cbernaze <cbernaze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:36:33 by cbernaze          #+#    #+#             */
-/*   Updated: 2023/11/07 13:35:05 by cbernaze         ###   ########.fr       */
+/*   Updated: 2023/11/07 13:39:23 by cbernaze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <iostream>
 # include <iomanip>
 # include <limits>
+# include <sstream>
 
 # define EMPTY -1
 # define SUCCESS 0

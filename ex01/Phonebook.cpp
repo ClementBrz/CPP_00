@@ -6,7 +6,7 @@
 /*   By: cbernaze <cbernaze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:26:47 by cbernaze          #+#    #+#             */
-/*   Updated: 2023/10/21 18:27:54 by cbernaze         ###   ########.fr       */
+/*   Updated: 2023/10/22 08:04:05 by cbernaze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int	Phonebook::search_contact()
 	int	index = 0;
 	std::string	input;
 
-	std::cout << "o------------------------------------o" << std::endl;
+	std::cout << std::endl << "o------------------------------------o" << std::endl;
 	std::cout << "|" << "Idx" << "|" << "First Name" << "|"
 				<< " Last Name" << "|" << "  Nickname" << "|" << std::endl;
 	for (int i = 0; i < 8; i++)
@@ -69,15 +69,15 @@ int	Phonebook::search_contact()
 		this->contact[i].show_contacts(i + 1);
 	}
 	std::cout << "o------------------------------------o" << std::endl;
-	std::cout << std::endl << "Which to contact do you want to consult?" << std::endl;
+	std::cout << std::endl << "Which contact do you want to consult?" << std::endl;
 	while (index < 1 || index > 8)
 	{
 		std::cout << "Type index: ";
 		std::getline(std::cin, input);
-		if (!input.empty() && std::istringstream(input) >> index && index < 1 || index > 8)
+		if (!input.empty() && std::istringstream(input) >> index && index > 0 && index < 8)
 			this->contact[index - 1].display_contact();
 		else
-			std::cout << "Please enter a number between 1 and 8." << std::endl;
+			std::cout << "This phonebook is annoyingly limited. Sorry for the inconvenience. Please enter a number between 1 and 8." << std::endl;
 	}
 	return (SUCCESS);
 }
