@@ -1,7 +1,7 @@
 NAME := accounts
-CXX := g++
+CXX := c++
 CXXFLAGS := -Wall -Werror -Wextra -std=c++98 -g3
-PATH_OBJS := objets
+PATH_OBJS := objs
 SRCS := tests.cpp Account.cpp
 HEADERS := Account.hpp
 OBJS := ${patsubst %.cpp, ${PATH_OBJS}/%.o, ${SRCS}}

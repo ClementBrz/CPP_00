@@ -6,7 +6,7 @@
 #    By: cbernaze <cbernaze@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/17 12:23:59 by cbernaze          #+#    #+#              #
-#    Updated: 2023/10/21 12:24:30 by cbernaze         ###   ########.fr        #
+#    Updated: 2023/11/09 12:18:16 by cbernaze         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SOURCES =	main.cpp		\
 			Phonebook.cpp	\
 			Contact.cpp		\
 
-CXX = g++
+CXX = c++
 
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98 -g3
 

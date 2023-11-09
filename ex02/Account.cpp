@@ -6,7 +6,7 @@
 /*   By: cbernaze <cbernaze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 08:59:05 by cbernaze          #+#    #+#             */
-/*   Updated: 2023/10/23 13:22:52 by cbernaze         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:31:24 by cbernaze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,7 +112,7 @@ bool	Account::makeWithdrawal( int withdrawal )
 	}
 	this->_amount -= withdrawal;
 	this->_nbWithdrawals++;
-	t::_totalAmount += withdrawal;
+	t::_totalAmount -= withdrawal;
 	t::_totalNbWithdrawals++;
 	this->_displayTimestamp();
 	std::cout << "index:" << this->_accountIndex << ";p_amount:" << this->_amount + withdrawal << ";withdrawal:" << withdrawal
@@ -138,7 +138,7 @@ void	Account::displayStatus( void ) const
 //fonction qui affiche le temps auquel une fonction a ete appelée
 void	Account::_displayTimestamp( void )
 {
-	std::time_t	time = std::time(nullptr);
+	std::time_t	time = std::time(NULL);
 	std::tm *today = std::localtime(&time);
 	std::cout << "[" << today->tm_year + 1900 << std::setw(2) << std::setfill('0') << today->tm_mon + 1
 				<< std::setw(2) << std::setfill('0') << today->tm_mday << "_" << std::setw(2)
