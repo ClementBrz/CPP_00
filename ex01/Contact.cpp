@@ -6,7 +6,7 @@
 /*   By: cbernaze <cbernaze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:35:54 by cbernaze          #+#    #+#             */
-/*   Updated: 2023/11/07 13:42:57 by cbernaze         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:06:03 by cbernaze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ Contact::Contact()
 Contact::Contact(std::string first_name, std::string last_name, std::string nickname,
 	std::string darkest_secret, std::string phone_number)
 {
-	m_first_name = first_name;
-	m_last_name = last_name;
-	m_nickname = nickname;
-	m_darkest_secret = darkest_secret;
-	m_phone_number = phone_number;
+	_first_name = first_name;
+	_last_name = last_name;
+	_nickname = nickname;
+	_darkest_secret = darkest_secret;
+	_phone_number = phone_number;
 }
 
 Contact::~Contact()
@@ -51,17 +51,17 @@ void	Contact::contact_infos(std::string info)
 void	Contact::show_contacts(int index)
 {
 	std::cout << "| " << index << " |";
-	contact_infos(this->m_first_name);
-	contact_infos(this->m_last_name);
-	contact_infos(this->m_nickname);
+	contact_infos(this->_first_name);
+	contact_infos(this->_last_name);
+	contact_infos(this->_nickname);
 	std::cout << std::endl;
 }
 
 int	Contact::first_name()
 {
 	std::cout << "First Name: ";
-	std::getline(std::cin, this->m_first_name);
-	if (m_first_name.length() == 0)
+	std::getline(std::cin, this->_first_name);
+	if (_first_name.length() == 0)
 		return (EMPTY);
 	return (SUCCESS);
 }
@@ -69,8 +69,8 @@ int	Contact::first_name()
 int	Contact::last_name()
 {
 	std::cout << "Last Name: ";
-	std::getline(std::cin, this->m_last_name);
-	if (m_last_name.length() == 0)
+	std::getline(std::cin, this->_last_name);
+	if (_last_name.length() == 0)
 		return (EMPTY);
 	return (SUCCESS);
 }
@@ -78,8 +78,8 @@ int	Contact::last_name()
 int	Contact::nickname()
 {
 	std::cout << "Nickname: ";
-	std::getline(std::cin, this->m_nickname);
-	if (m_nickname.length() == 0)
+	std::getline(std::cin, this->_nickname);
+	if (_nickname.length() == 0)
 		return (EMPTY);
 	return (SUCCESS);
 }
@@ -87,8 +87,8 @@ int	Contact::nickname()
 int	Contact::phone_number()
 {
 	std::cout << "Phone Number: ";
-	std::getline(std::cin, this->m_phone_number);
-	if (m_phone_number.length() == 0)
+	std::getline(std::cin, this->_phone_number);
+	if (_phone_number.length() == 0)
 		return (EMPTY);
 	return (SUCCESS);
 }
@@ -96,8 +96,8 @@ int	Contact::phone_number()
 int	Contact::darkest_secret()
 {
 	std::cout << "Darkest Secret: ";
-	std::getline(std::cin, this->m_darkest_secret);
-	if (m_darkest_secret.length() == 0)
+	std::getline(std::cin, this->_darkest_secret);
+	if (_darkest_secret.length() == 0)
 		return (EMPTY);
 	return (SUCCESS);
 }
@@ -105,10 +105,10 @@ int	Contact::darkest_secret()
 void	Contact::display_contact()
 {
 	std::cout << std::endl;
-	std::cout << "First Name: " << this->m_first_name << std::endl;
-	std::cout << "Last Name: " << this->m_last_name << std::endl;
-	std::cout << "Nickname: " << this->m_nickname << std::endl;
-	std::cout << "Phone Number: " << this->m_phone_number << std::endl;
-	std::cout << "Darkest Secret: " << this->m_darkest_secret << std::endl;
+	std::cout << "First Name: " << this->_first_name << std::endl;
+	std::cout << "Last Name: " << this->_last_name << std::endl;
+	std::cout << "Nickname: " << this->_nickname << std::endl;
+	std::cout << "Phone Number: " << this->_phone_number << std::endl;
+	std::cout << "Darkest Secret: " << this->_darkest_secret << std::endl;
 	std::cout << std::endl;
 }

@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/clementbernazeau/Desktop/42/Cercle_4/CPP_00",
-      "program": "/Users/clementbernazeau/Desktop/42/Cercle_4/CPP_00/build/Debug/outDebug"
+      "cwd": "/Users/clementbernazeau/Desktop/42/Cercle_4/CPP_00/ex02",
+      "program": "/Users/clementbernazeau/Desktop/42/Cercle_4/CPP_00/ex02/build/Debug/outDebug"
     }
   ]
 }

@@ -6,7 +6,7 @@
 /*   By: cbernaze <cbernaze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:36:33 by cbernaze          #+#    #+#             */
-/*   Updated: 2023/11/07 13:42:41 by cbernaze         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:06:18 by cbernaze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,11 @@ class	Contact
 
 	private:
 
-	std::string	m_first_name;
-	std::string	m_last_name;
-	std::string	m_nickname;
-	std::string	m_phone_number;
-	std::string	m_darkest_secret;
+	std::string	_first_name;
+	std::string	_last_name;
+	std::string	_nickname;
+	std::string	_phone_number;
+	std::string	_darkest_secret;
 };
 
 #endif

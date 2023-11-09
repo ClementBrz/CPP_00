@@ -6,7 +6,7 @@
 /*   By: cbernaze <cbernaze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:27:31 by cbernaze          #+#    #+#             */
-/*   Updated: 2023/10/21 15:25:00 by cbernaze         ###   ########.fr       */
+/*   Updated: 2023/10/24 14:27:16 by cbernaze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ class	Phonebook
 
 	private:
 
-	Contact	contact[8];
+	Contact	_contact[8];
 };
 
 #endif
