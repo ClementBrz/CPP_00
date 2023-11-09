@@ -6,7 +6,7 @@
 /*   By: cbernaze <cbernaze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:36:33 by cbernaze          #+#    #+#             */
-/*   Updated: 2023/11/07 13:39:23 by cbernaze         ###   ########.fr       */
+/*   Updated: 2023/11/07 13:42:41 by cbernaze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ class	Contact
 	Contact();
 	Contact(std::string first_name, std::string last_name, std::string nickname,
 			std::string darkest_secret, std::string phone_number);
-	// Contact(Contact const& other);
 	~Contact();
 
 	//Methodes

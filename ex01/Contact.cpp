@@ -6,7 +6,7 @@
 /*   By: cbernaze <cbernaze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:35:54 by cbernaze          #+#    #+#             */
-/*   Updated: 2023/10/22 08:01:23 by cbernaze         ###   ########.fr       */
+/*   Updated: 2023/11/07 13:42:57 by cbernaze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,6 @@ Contact::Contact(std::string first_name, std::string last_name, std::string nick
 	m_darkest_secret = darkest_secret;
 	m_phone_number = phone_number;
 }
-
-// Contact::Contact(Contact const& other): m_first_name(other.m_first_name), m_last_name(other.m_last_name), m_nickname(other.m_nickname), m_darkest_secret(other.m_darkest_secret), m_phone_number(other.m_phone_number){
-// }
 
 Contact::~Contact()
 {
